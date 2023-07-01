@@ -3,7 +3,7 @@ createApp({
     data() {
         return {
             cursos: [],
-            url: 'http://localhost:5000/cursos', 
+            url: 'http://edmiguens.pythonanywhere.com/cursos', 
             error: false,
             cargando: true,
             id: 0,
