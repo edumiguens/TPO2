@@ -10,7 +10,7 @@ createApp({
             resumen: "",
             capacidad: 0,
             precio: 0,
-            url: 'http://localhost:5000/cursos/' + id,
+            url: 'http://edmiguens.pythonanywhere.com/cursos/' + id,
         }
     },
     methods: {
