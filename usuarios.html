@@ -19,17 +19,7 @@
             <br>
             <a class="btn btn-primary" href="usuario_nuevo.html">Agregar Usuario</a>
             <br><br>
-
-            <div v-if="error">
-                <p>Lo sentimos , ........</p>
-            </div>
-            <div v-else>
-                <section v-if="cargando">
-                    <div class="spinner-border"></div>
-                    <p>Cargando .....</p>
-                </section>
-                <section v-else>
-                    <div class="table-responsive">
+            <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -58,8 +48,7 @@
                             </tbody>
                         </table>
                     </div>
-                </section>
-            </div>
+            
         </div>
     </main>
 
