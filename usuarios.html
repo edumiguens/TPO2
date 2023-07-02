@@ -34,10 +34,10 @@
                             <tbody>
                                 <tr class="" v-for="usuario in usuarios">
                                     <td scope="row">{{usuario.id}}</td>
-                                    <td>{{edmiguens$default.usuario.nombre}}</td>
-                                    <td>{{edmiguens$default.usuario.apellido}}</td>
-                                    <td>{{edmiguens$default.usuario.dni}}</td>
-                                    <td>{{edmiguens$default.usuario.permiso}}</td>
+                                    <td>{{usuario.nombre}}</td>
+                                    <td>{{usuario.apellido}}</td>
+                                    <td>{{usuario.dni}}</td>
+                                    <td>{{usuario.permiso}}</td>
                                     <td>
                                         <a class="btn btn-primary"
                                             :href="'usuario_update.html?id='+ usuario.id">Editar</a>
