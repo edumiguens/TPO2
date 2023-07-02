@@ -4,13 +4,10 @@ createApp({
         return {
             usuarios: [],
             url: 'http://edmiguens.pythonanywhere.com/usuarios', 
-            error: false,
-            cargando: true,
             id: 0,
             nombre: "",
             apellido: "",
             dni: 0,
-            clave: "",
             permiso: "",
         }
     },
@@ -44,7 +41,7 @@ createApp({
                 nombre: this.nombre,
                 apellido: this.apellido,
                 dni: this.dni,
-                clave: this.clave
+                permiso: this.permiso
             }
             var options = {
                 body: JSON.stringify(usuario),
