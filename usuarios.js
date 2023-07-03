@@ -4,10 +4,13 @@ createApp({
         return {
             usuarios: [],
             url: 'http://edmiguens.pythonanywhere.com/usuarios', 
+            error: false,
+            cargando: true,
             id: 0,
-            nombre: "",
-            apellido: "",
+            nombreyapellido: "",
             dni: 0,
+            username: "",
+            password: "",
             permiso: "",
         }
     },
@@ -38,9 +41,10 @@ createApp({
         },
         grabar() {
             let usuario = {
-                nombre: this.nombre,
-                apellido: this.apellido,
+                nombreyapellido: this.nombreyapellido,
                 dni: this.dni,
+                username: this.username,
+                password: this.password,
                 permiso: this.permiso
             }
             var options = {
@@ -51,12 +55,12 @@ createApp({
             }
             fetch(this.url, options)
                 .then(function () {
-                    alert("Usuario Reistrado")
+                    alert("Usuario Registrado")
                     window.location.href = "./usuarios.html";
                 })
                 .catch(err => {
                     console.error(err);
-                    alert("Error al Registrar")
+                    alert("Error al Registrar Usuario")
 
                 })
         }

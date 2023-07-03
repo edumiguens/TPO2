@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Cursos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,7 +20,16 @@
             <a class="btn btn-primary" href="curso_nuevo.html">Agregar Curso</a>
             <br><br>
 
-            <div class="table-responsive">
+            <div v-if="error">
+                <p>Lo sentimos , ........</p>
+            </div>
+            <div v-else>
+                <section v-if="cargando">
+                    <div class="spinner-border"></div>
+                    <p>Cargando .....</p>
+                </section>
+                <section v-else>
+                    <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -49,6 +58,8 @@
                             </tbody>
                         </table>
                     </div>
+                </section>
+            </div>
         </div>
     </main>
 
@@ -62,9 +73,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="cursos.js"></script>
+    <script src="./js/cursos.js"></script>
 </body>
 
 </html>

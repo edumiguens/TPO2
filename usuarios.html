@@ -19,14 +19,24 @@
             <br>
             <a class="btn btn-primary" href="usuario_nuevo.html">Agregar Usuario</a>
             <br><br>
-            <div class="table-responsive">
+
+            <div v-if="error">
+                <p>Lo sentimos , ........</p>
+            </div>
+            <div v-else>
+                <section v-if="cargando">
+                    <div class="spinner-border"></div>
+                    <p>Cargando .....</p>
+                </section>
+                <section v-else>
+                    <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
                                     <th scope="col">Id</th>
-                                    <th scope="col">Nombre</th>
-                                    <th scope="col">Apellido</th>
+                                    <th scope="col">NombreyApelido</th>
                                     <th scope="col">Dni</th>
+                                    <th scope="col">Username</th>
                                     <th scope="col">Permiso</th>
                                     <th scope="col">Acciones</th>
                                 </tr>
@@ -34,9 +44,9 @@
                             <tbody>
                                 <tr class="" v-for="usuario in usuarios">
                                     <td scope="row">{{usuario.id}}</td>
-                                    <td>{{usuario.nombre}}</td>
-                                    <td>{{usuario.apellido}}</td>
+                                    <td>{{usuario.nombreyapellido}}</td>
                                     <td>{{usuario.dni}}</td>
+                                    <td>{{usuario.username}}</td>
                                     <td>{{usuario.permiso}}</td>
                                     <td>
                                         <a class="btn btn-primary"
@@ -48,7 +58,8 @@
                             </tbody>
                         </table>
                     </div>
-            
+                </section>
+            </div>
         </div>
     </main>
 

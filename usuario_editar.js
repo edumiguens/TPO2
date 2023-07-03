@@ -6,9 +6,10 @@ createApp({
     data() {
         return {
             id: 0,
-            nombre: "",
-            apellido: "",
+            nombreyapellido: "",
             dni: 0,
+            username: "",
+            password: "",
             permiso: "",
             url: 'http://edmiguens.pythonanywhere.com/usuarios/' + id,
         }
@@ -21,9 +22,10 @@ createApp({
 
                     console.log(data)
                     this.id = data.id
-                    this.nombre = data.nombre;
-                    this.apellido = data.apellido
+                    this.nombreyapellido = data.nombreyapellido;
                     this.dni = data.dni
+                    this.username = data.username
+                    this.password = data.password
                     this.permiso = data.permiso
                 })
                 .catch(err => {
@@ -33,9 +35,10 @@ createApp({
         },
         modificar() {
             let usuario = {
-                nombre: this.nombre,
-                apellido: this.apellido,
+                nombreyapellido: this.nombreyapellido,
                 dni: this.dni,
+                username: this.username,
+                password: this.password,
                 permiso: this.permiso
             }
             var options = {

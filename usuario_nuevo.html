@@ -20,22 +20,26 @@
             <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
                 <h1>Registro de usuario</h1>
                 <div class="mb-3">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" v-model="nombre">
+                    <label for="nombreyapellido">Nombre y Apellido: </label>
+                    <input type="text" name="nombreyapellido" id="nombreyapellido" v-model="nombreyapellido">
                 </div>
                 <div class="mb-3">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" v-model="apellido">
-                </div>
-
-                <div class="mb-3">
-                    <label for="dni">Dni</label>
+                    <label for="dni">Dni: </label>
                     <input type="number" name="dni" id="dni" v-model="dni">
                 </div>
                 <div class="mb-3">
-                    <label for="clave">Clave</label>
-                    <input type="text" name="clave" id="clave" v-model="clave">
+                    <label for="username">Usuario: </label>
+                    <input type="text" name="username" id="username" v-model="username">
                 </div>
+                <div class="mb-3">
+                    <label for="password">Contraseña: </label>
+                    <input type="text" name="password" id="password" v-model="password">
+                </div>
+                <div class="mb-3">
+                    <label for="permiso">Permiso: </label>
+                    <input type="text" name="permiso" id="permiso"  autocomplete="on" value="Alumno" readonly>
+                </div>
+
                 <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>
             </form>
         </div>
