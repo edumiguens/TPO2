@@ -1,0 +1,345 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222831;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    background-color: #3F4E4F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    width: 100%;
+}
+
+.titleprincipal {
+    color: #dddddd;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.titleprincipal span {
+    animation: color-change 10s infinite;
+}
+
+@keyframes color-change {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: green;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: yellow;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+nav a {
+    text-decoration: none;
+    color: #dddddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.fijo {
+    background-color: rgba(199, 199, 199, 0.2);
+}
+
+.partsheader nav a:hover {
+    background-color: rgba(199, 199, 199, 0.2);
+    transition: 0.5s;
+}
+
+
+.containerintro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagenes/2324350.jpg);
+    background-size: cover;
+    background-position: center center center center;
+    height: 80vh;
+}
+
+.containerintro h1 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.containerintro a {
+    font-family: 'Wix Madefor Display', sans-serif;
+    background-color: #171717;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #dddddd;
+    text-decoration: none;
+    padding: 1vw;
+    width: 20vw;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+.containerintro a:hover {
+    box-shadow: 0px 0px 25px 5px rgba(255, 255, 255, 0.3);
+}
+
+.containercursos {
+    display: flex;
+    flex-direction: column;
+    background-color: #222831;
+    height: 1500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.curso {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #171717;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #dddddd;
+    justify-content: space-around;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.5);
+}
+
+.curso a {
+    font-family: 'Wix Madefor Display', sans-serif;
+    background-color: #dddddd;
+    text-decoration: none;
+    text-align: center;
+    color: #171717;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    transition: 0.3s;
+    width: 100%;
+    box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.5);
+}
+
+.curso a:hover {
+    background-color: black;
+    color: #dddddd;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    padding: 20px;
+}
+
+.test h2 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #dddddd;
+    text-align: center;
+}
+
+.imgtest {
+    width: 300px;
+    height: 300px;
+    background-image: url(imagenes/test.png);
+    background-size: cover;
+}
+
+.containerdescription {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 0 auto 0 auto 0;
+    row-gap: 20px;
+    height: 1700px;
+    padding: 20px;
+    background-color: #dddddd;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    background-color: #171717;
+    justify-content: space-around;
+    padding: 20px;
+    color: #dddddd;
+    font-family: 'Wix Madefor Display', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.5);
+}
+
+.listaimagen ul {
+    padding: 20px;
+}
+
+.description h3 {
+    text-align: center;
+}
+
+.description button {
+    background: linear-gradient(to right, #00ff75, #00bfff);
+    font-family: 'Wix Madefor Display', sans-serif;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: #171717;
+    border-style: none;
+}
+
+.containerfooter {
+    display: flex;
+    height: 100px;
+    background-color: #3F4E4F;
+    align-items: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #dddddd;
+    padding: 20px;
+}
+
+.containerfooter h2 {
+    padding: 20px;
+    font-size: 26px;
+}
+
+.containerfooter .separador {
+    width: 1px;
+    height: 80%;
+    background-color: #8b8b8b;
+
+}
+
+.containerfooter .redes {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+
+.redes a {
+    margin-left: 30px;
+}
+
+.redes a:last-child {
+    margin-right: 30px;
+}
+
+
+/* area de breakpoints */
+
+@media screen and (min-width: 900px) {
+    .containercursos {
+        flex-direction: row;
+        height: 800px;
+    }
+
+    .test {
+        flex-direction: row;
+    }
+
+    .listaimagen {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .image1,
+    .image2,
+    .image3 {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        margin-right: 50px;
+    }
+
+    .image1 {
+        background-image: url(imagenes/derivada.png);
+    }
+
+    .image2 {
+        background-image: url(imagenes/calculator.png);
+    }
+
+    .image3 {
+        background-image: url(imagenes/integral.png);
+    }
+
+    .test h2 {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .containerdescription {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .image1,
+    .image2,
+    .image3 {
+        display: none;
+    }
+
+    .vacio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img1,
+    .img2,
+    .img3 {
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+    }
+
+    .img1 {
+        background-image: url(imagenes/derivada.png);
+    }
+
+    .img2 {
+        background-image: url(imagenes/calculator.png);
+    }
+
+    .img3 {
+        background-image: url(imagenes/integral.png);
+    }
+}

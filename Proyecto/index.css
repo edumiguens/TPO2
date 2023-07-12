@@ -1,0 +1,404 @@
+body {
+    background-color: #222831;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    font-family: 'Wix Madefor Display', sans-serif;
+    background-color: #3F4E4F;
+    position: fixed;
+    width: 100%;
+}
+
+header .partsheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.titleprincipal {
+    color: #dddddd;
+    padding-bottom: 20px;
+}
+
+.titleprincipal span {
+    animation: color-change 10s infinite;
+}
+
+@keyframes color-change {
+    0% { color: red; }
+    25% { color: green; }
+    50% { color: blue; }
+    75% {color: yellow;}
+    100% {color: red;}
+  }
+
+.partsheader nav a {
+    text-decoration: none;
+    color: #dddddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.fijo {
+    background-color: rgba(199, 199, 199, 0.2);
+}
+
+.partsheader nav a:hover {
+    background-color: rgba(199, 199, 199, 0.2);
+    transition: 0.5s;
+}
+
+.containerinicio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #dddddd;
+}
+
+.containerinicio h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.containerinicio div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerprincipal {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerprincipal h2 {
+    text-align: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #dddddd;
+    padding: 20px;
+}
+
+.containergrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    gap: 10px;
+    padding: 10px;
+}
+
+.blanco {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px outset white;
+    border-radius: 10px;
+    background-color: #dddddd;
+    color: #171717;
+    transition: 0.5s;
+}
+
+.negro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px outset black;
+    border-radius: 10px;
+    background-color: #171717;
+    color: #dddddd;
+    transition: 0.5s;
+}
+
+.blanco:hover {
+    border: 1px outset #171717;
+    background-color: #171717;
+    color: #dddddd;
+}
+
+.negro:hover {
+    border: 1px outset #dddddd;
+    background-color: #dddddd;
+    color: #171717;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8 {
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.image1 {
+    background-image: url(imagenes/eficaz.png);
+}
+
+.image2 {
+    background-image: url(imagenes/asegurado.png);
+}
+
+.image3 {
+    background-image: url(imagenes/eficiencia.png);
+}
+
+.image4 {
+    background-image: url(imagenes/tiempo-rapido.png);
+}
+
+.image5 {
+    background-image: url(imagenes/gratis.png);
+}
+
+.image6 {
+    background-image: url(imagenes/facil.png);
+}
+
+.image7 {
+    background-image: url(imagenes/maquina-de-arcade.png);
+}
+
+.image8 {
+    background-image: url(imagenes/trabajo-en-equipo.png);
+}
+
+.blanco:hover .image1,
+.negro:hover .image2,
+.negro:hover .image3,
+.blanco:hover .image4,
+.blanco:hover .image5,
+.negro:hover .image6,
+.negro:hover .image7,
+.blanco:hover .image8 {
+    width: 150px;
+    height: 150px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.text h3 {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.text p {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.containersecundario {
+    display: flex;
+    flex-direction: column;
+    height: 1400px;
+    padding: 20px;
+}
+
+.containersecundario h1 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #dddddd;
+    text-align: center;
+}
+
+.cartas {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.cartas>a {
+    display: flex;
+    flex-direction: column;
+    background-color: #dddddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    height: 400px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 2px outset white;
+    text-decoration: none;
+    color: #171717;
+
+}
+
+.cartas>a:hover {
+    background-color: #171717;
+    color: #dddddd;
+    border: 1.5px outset black;
+}
+
+.imgextra1,
+.imgextra2,
+.imgextra3 {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    transition: 0.5s
+}
+
+.cartas>a:hover .imgextra1,
+.cartas>a:hover .imgextra2,
+.cartas>a:hover .imgextra3 {
+    height: 230px;
+    width: 230px;
+    margin-top: 5px;
+}
+
+.imgextra1 {
+    background-image: url(imagenes/derivadaindex.png);
+}
+
+.imgextra2 {
+    background-image: url(imagenes/rubik.png);
+}
+
+.imgextra3 {
+    background-image: url(imagenes/parabola.png);
+}
+
+.containertercero {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-color: #222831;
+    padding: 20px;
+    align-items: center;
+}
+
+.containerextra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 80%;
+    background-image: url(imagenes//fondosec4.png);
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 20px;
+}
+
+.containerextra div {
+    width: 70%;
+    background-color: rgba(17, 17, 17, 0.7);
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #dddddd;
+    font-size: 26px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.containertercero a {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #171717;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #dddddd;
+    font-size: 20px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 10px;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.containertercero a:hover {
+    box-shadow: inset 0 0px 5px rgba(255, 255, 255, 0.8);
+}
+
+.containerfooter {
+    display: flex;
+    height: 100px;
+    background-color: #3F4E4F;
+    align-items: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #dddddd;
+    padding: 20px;
+}
+
+.containerfooter h2 {
+    padding: 20px;
+    font-size: 26px;
+}
+
+.containerfooter .separador {
+    width: 1px;
+    height: 80%;
+    background-color: #8b8b8b;
+
+}
+
+.containerfooter .redes {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+
+.redes a {
+    margin-left: 30px;
+}
+
+.redes a:last-child {
+    margin-right: 30px;
+}
+
+
+
+/* area de breakpoints */
+
+@media screen and (min-width: 1000px) {
+    .containergrid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+
+    .text h3 {
+        text-align: center;
+        font-size: 2.5vw;
+    }
+
+    .text p {
+        text-align: center;
+        font-size: 1.3vw;
+    }
+
+    .containersecundario {
+        height: 600px;
+    }
+
+    .cartas {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .cartas>div {
+        margin-left: 20px;
+    }
+
+    .containerinicio div {
+        flex-direction: row;
+    }
+}

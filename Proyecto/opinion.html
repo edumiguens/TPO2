@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/2fav.ico" type="ico" sizes="16px">
+    <title>4Mathics - Biblioteca</title>
+    <link rel="stylesheet" href="opinion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="partsheader">
+            <h1 class="titleprincipal"><span>4</span>Mathics</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="cursos.html">Cursos</a>
+                <a class="fijo" href="">Foro</a>
+                <a href="form.html">Soporte</a>
+                <a href="inscribite.html">Inscribite</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="titulo">
+            <h1>Conocé todas las opiniones de los que nos eligieron!</h1>
+        </div>
+        <div id="opinion-app">
+            <div class="input-container">
+                <div class="input-item1">
+                    <div>
+                        <span class="labels">Nombre</span>
+                        <input type="text" id="nombre" class="input">
+                    </div>
+                    <div>
+                        <span class="labels">Usuario</span>
+                        <input type="text" id="usuario" class="input">
+                    </div>
+                </div>
+                <div class="input-item2">
+                    <textarea name="op" id="input" placeholder="Contanos que opinas!.."></textarea>
+                    <button @click="colgarOpinion" class="botoninput">Enviar</button>
+                </div>
+            </div>
+            <div class="opinionCont">
+                <div class="numeros">
+                    <span id="numeroOpi">{{opinionesHechas}}</span>
+                    <p>Opiniones vistas</p>
+                <button class="botonAc" @click="mostrarDatosdeAPI">Actualizar opiniones</button>
+                </div>
+                <div class="opinionSeccion1" v-html="opinionUsuario"></div>
+                <div class="opinionSeccion2" v-html="opinionActuales"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="containerfooter">
+            <img src="imagenes/pi.png" alt="">
+            <h2>4Mathics</h2>
+            <div class="separador"></div>
+            <div class="redes">
+                <a href=""><img src="imagenes/facebook.png" alt=""></a>
+                <a href=""><img src="imagenes/twitter.png" alt=""></a>
+                <a href=""><img src="imagenes/instagram.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="opinion.js"></script>
+</body>
+
+</html>

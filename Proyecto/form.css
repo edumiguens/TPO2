@@ -1,0 +1,274 @@
+body{
+    display:grid;
+    grid-template: 150px 800px 100px/repeat(3, auto);
+    margin: 0;
+    background-color: #222831;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    font-family: 'Wix Madefor Display', sans-serif;
+    background-color: #3F4E4F;
+    position: fixed;
+    width: 100%;
+    z-index:3000;
+}
+
+header .partsheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.titleprincipal {
+    color: #dddddd;
+    padding-bottom: 20px;
+}
+
+.titleprincipal span {
+    animation: color-change 10s infinite;
+}
+
+@keyframes color-change {
+    0% { color: red; }
+    25% { color: green; }
+    50% { color: blue; }
+    75% {color: yellow;}
+    100% {color: red;}
+  }
+
+.partsheader nav a {
+    text-decoration: none;
+    color: #dddddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.fijo {
+    background-color: rgba(199, 199, 199, 0.2);
+}
+
+.partsheader nav a:hover {
+    background-color: rgba(199, 199, 199, 0.2);
+    transition: 0.5s;
+}
+
+/*Todo lo relacionado al main*/
+
+main {
+    display: grid;
+    grid-template: 100%/50% 50%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    font-family: 'Wix Madefor Display', sans-serif;
+    margin: 10%;
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.41);
+    }
+.d1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-start:1;
+    grid-column-end: 1;
+    background-image: url(imagenes/imagensuport3.jpg);
+    background-size: 160%;
+}
+.d1 p{
+    background-color: rgba(222, 222, 222, 0.719);
+    padding: 1%;
+}
+.bg-form{
+    background-color: rgb(238, 238, 238);
+}
+form{
+    padding:2.3rem 2.2rem;
+    z-index: 10;
+    overflow:hidden;
+    position: relative;
+}
+h3{
+    text-align: center;
+}
+.titulo{
+    color:#3F4E4F;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.input-container{
+    position: relative;
+    margin:1rem 0;
+}
+.input{
+    width: 100%;
+    outline: none;
+    border:2px solid rgba(137, 136, 136, 0.621);
+    background: none;
+    padding: 0.6rem;
+    color:#3F4E4F;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+textarea.input{
+    padding: 0.4rem;
+    min-height: 120px;
+    max-width: 100%;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+}
+.input-container label{
+    position: absolute;
+    top: 48%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding:0 0.4rem;
+    color:rgb(94, 94, 94);
+    font-size: 1rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+}
+.input-container.textarea label{
+    top:1rem;
+    transform: translateY(0);
+}
+.boton{
+    padding:0.6rem 1.3rem;
+    background-color:rgba(94, 94, 94);
+    border:2px solid rgba(140, 140, 140, 0.453);
+    font-size: 1rem;
+    color:rgb(238, 238, 238);
+    line-height: 1;
+    border-radius:25px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+.boton:hover{
+    background-color: transparent;
+    color:rgba(94, 94, 94);
+}
+.input-container span{
+    position: absolute;
+    top:0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    padding: 0 0.4rem;
+    color:transparent;
+    pointer-events: none;
+    z-index: 500;
+}
+.input-container span::before,
+.input-container span::after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    background-color: rgba(238, 238, 238);
+    top:50%;
+    transform: translateY(-50%);
+}
+.input-container span::before{
+    left: 50%;
+}
+.input-container span::after{
+    right: 50%;
+}
+.input-container.focus label{
+    top:0;
+    transform: translateY(-50%);
+    left:25px;
+    font-size: 0.9rem;
+}
+.input-container.focus span::before,
+.input-container.focus span::after{
+    width: 50%;
+    opacity: 1;
+    
+}
+
+/*todo lo relacionado al footer*/
+footer{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.containerfooter {
+    display: flex;
+    height: 100px;
+    background-color: #3F4E4F;
+    align-items: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #dddddd;
+    padding: 20px;
+}
+
+.containerfooter h2 {
+    padding: 20px;
+    font-size: 26px;
+}
+
+.containerfooter .separador {
+    width: 1px;
+    height: 80%;
+    background-color: #8b8b8b;
+
+}
+
+.containerfooter .redes {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+
+.redes a {
+    margin-left: 30px;
+}
+
+.redes a:last-child {
+    margin-right: 30px;
+}
+/*Area de breakpoints*/
+@media only screen and (max-width: 1000px) {
+    main{
+        grid-template: 40% 60%/100%;
+        margin: 5%;
+    }
+    .d1{
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .d1 p{
+        text-align: center;
+    }
+    .container{
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .container h3{
+        display: none;
+    }
+    textarea.input{
+        max-height:40px;
+    }
+}

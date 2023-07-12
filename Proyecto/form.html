@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/2fav.ico" type="ico" sizes="16px">
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <title>4Mathics - Soporte</title>
+</head>
+
+<body>
+    <header>
+        <div class="partsheader">
+            <h1 class="titleprincipal"><span>4</span>Mathics</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="opinion.html">Foro</a>
+                <a class="fijo" href="">Soporte</a>
+                <a href="inscribite.html">Inscribite</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="d1">
+            <h1>CONTACTANOS</h1>
+            <p>Escribi tu consulta y enviala. En la brevedad te responderemos.</p>
+        </div>
+        <div class="bg-form">
+            <div class="container">
+                <div class="form">
+                    <form id="formulario" onsubmit="return validarFormulario()">
+                        <h3 class="titulo">Escribi tus datos y envianos tu consulta!</h3>
+                        <div class="input-container">
+                          <input type="text" name="nombre" id="nombre" class="input">
+                          <label for="nombre">Nombre</label>
+                          <span>Nombre</span>
+                        </div>
+                        <div class="input-container">
+                          <input type="text" name="mail" id="mail" class="input">
+                          <label for="mail">Email</label>
+                          <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                          <input type="tel" name="tel" id="tel" class="input">
+                          <label for="tel">Telefono</label>
+                          <span>Telefono</span>                         
+                        </div>
+                        <div class="input-container textarea">
+                          <textarea name="consulta" id="consulta" class="input"></textarea>
+                          <label for="consulta">Consulta</label>
+                          <span>Consulta</span>
+                        </div>
+                        <input type="submit" value="Enviar" class="boton">
+                      </form>
+                      
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="containerfooter">
+            <img src="imagenes/pi.png" alt="">
+            <h2>4Mathics</h2>
+            <div class="separador"></div>
+            <div class="redes">
+                <a href=""><img src="imagenes/facebook.png" alt=""></a>
+                <a href=""><img src="imagenes/twitter.png" alt=""></a>
+                <a href=""><img src="imagenes/instagram.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="form.js"></script>
+</body>
+
+</html>
